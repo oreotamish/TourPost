@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlanguageOneRowModel" type="com.tourpost.app.modules.homepagetwo.data.model.ListlanguageOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowlanguage"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguageOne"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.76" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listlanguageOneRowModel.txtLanguageOne}"
+            style="@style/txtLeagueSpartanmedium12" tools:text="@string/msg_how_to_enjoy_no"/>
+        <LinearLayout android:id="@+id/linearRowtwenty"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_125pxh"
+            android:layout_weight="0.24" android:layout_width="0dp" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwenty"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_weight="0.44" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listlanguageOneRowModel.txtTwenty}"
+                style="@style/txtLeagueSpartanregular8" tools:text="@string/lbl_20"/>
+            <ImageView android:id="@+id/imageChat"
+                android:layout_height="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_10pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_chat"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_chat"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

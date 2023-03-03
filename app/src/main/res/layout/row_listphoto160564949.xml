@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listphoto160564949RowModel" type="com.tourpost.app.modules.homepageone.data.model.Listphoto160564949RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowphoto160564948"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_800cornerRadius">
+        <ImageView android:id="@+id/imagePhoto160564948"
+            android:layout_height="@dimen/_45pxh"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_64pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_12pxh}"
+            imageRes="@{@drawable/img_photo160564948}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_photo160564948"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnplanningamana"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="0.79" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPlanningaMana"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listphoto160564949RowModel.txtPlanningaMana}"
+                style="@style/txtAoboshiOneregular11" tools:text="@string/msg_planning_a_mana"/>
+            <LinearLayout android:id="@+id/linearRowmanaliisarus"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/txtManaliisarus"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_weight="0.63"
+                    android:layout_width="0dp"
+                    android:text="@{listphoto160564949RowModel.txtManaliisarus}"
+                    style="@style/txtAoboshiOneregular8" tools:text="@string/msg_manali_is_a_rus"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listphoto160564949RowModel.txtLanguage}"
+                    style="@style/txtAoboshiOneregular10" tools:text="@string/msg_sooraj_aggarwa"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="inboxRowModel" type="com.tourpost.app.modules.inbox.data.model.InboxRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowcamera"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_903cornerRadius">
+        <LinearLayout android:id="@+id/linearRowuser"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.9" android:layout_width="0dp" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frameStackuser"
+                android:layout_height="@dimen/_28pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_30pxh">
+                <ImageView android:id="@+id/imageUser"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_user_17x13"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_user_17x13"/>
+                <FrameLayout android:id="@+id/frameStackellipse193"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_28pxv" android:layout_width="@dimen/_30pxh">
+                    <ImageView android:id="@+id/imageEllipse193"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_30pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_ellipse193"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse193"/>
+                    <FrameLayout android:id="@+id/frameStackuserOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_28pxv" android:layout_width="@dimen/_30pxh">
+                        <ImageView android:id="@+id/imageUserOne"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_17pxh"
+                            android:layout_marginBottom="@dimen/_5pxv"
+                            android:layout_marginEnd="@dimen/_8pxh"
+                            android:layout_marginStart="@dimen/_8pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_width="@dimen/_13pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_user_17x13"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_user_17x13"/>
+                        <ImageView android:id="@+id/imageEllipse193One"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_28pxh"
+                            android:layout_width="@dimen/_30pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_ellipse193"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse193"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnguideone"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_weight="0.76" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGuideOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{inboxRowModel.txtGuideOne}"
+                    style="@style/txtLeagueSpartanbold16" tools:text="@string/lbl_guide_1"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHellofromme"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{inboxRowModel.txtHellofromme}"
+                    style="@style/txtLeagueSpartanregular16" tools:text="@string/lbl_hello_from_me"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageCamera"
+            android:layout_height="@dimen/_13pxh"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_139pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="@dimen/_15pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_camera_13x15"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_camera_13x15"/>
+    </LinearLayout>
+</layout>
